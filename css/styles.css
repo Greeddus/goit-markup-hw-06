@@ -232,7 +232,7 @@ img {
 
 /*===================TEAM========================*/
 .team {
-  width: calc((100%-3 * 24) / 4);
+  width: calc((100%-72) / 4) ;
   padding: 120px 0;
   background: #f4f4fd;
 }
@@ -327,7 +327,7 @@ img {
   margin-bottom: 72px;
 }
 .portfolio-list {
-  max-width: calc((100-2 * 24) / 3);
+  max-width: calc((100%-48) / 3) ;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -557,7 +557,6 @@ img {
 }
 
 .modal-form {
-  
 }
 
 .modal-close {
@@ -585,6 +584,7 @@ img {
 }
 
 .modal-icon-close {
+  padding: 0;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -638,6 +638,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
+  padding-left: 38px;
   padding: 8px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -666,7 +667,6 @@ img {
 }
 
 .modal-field {
-
   margin-bottom: 16px;
   margin-bottom: 24px;
 }
@@ -704,7 +704,6 @@ img {
 }
 
 .modal-span {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -717,6 +716,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
 }
 
 .modal-check-icon {
