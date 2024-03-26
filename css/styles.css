@@ -456,6 +456,8 @@ img {
 }
 
 .subscribe-text {
+  display: block;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -465,9 +467,13 @@ img {
 .footer-form {
   display: flex;
   gap: 24px;
-  margin-top: 16px;
 }
 .footer-input {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   padding-left: 16px;
   padding-bottom: 8px;
   padding-top: 8px;
@@ -484,10 +490,12 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-form-btn {
+  min-width: 165px;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,11 +508,11 @@ img {
   padding: 8px 24px;
   background-color: #4d5ae5;
   border: none;
-  gap: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-icon {
+  margin-left: 16px;
   fill: #fff;
 }
 
@@ -522,6 +530,8 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -531,6 +541,7 @@ img {
 }
 
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -540,12 +551,18 @@ img {
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form {
 }
 
 .modal-close {
+  padding: 0;
+  width: 24px;
+  height: 24px;
   display: flex;
   padding: 8px;
   position: absolute;
@@ -553,13 +570,16 @@ img {
   right: 24px;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
+  border: none;
   background-color: #404bbf;
 }
 
@@ -568,17 +588,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover .modal-icon-close {
-  fill: #fff;
+.modal-close:hover .modal-icon-close,
+.modal-close:focus .modal-icon-close {
+  fill: #ffffff;
 }
 
 .modal-title {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -590,6 +605,8 @@ img {
 }
 
 .modal-input {
+  background-color: transparent;
+  padding-left: 38px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -610,6 +627,11 @@ img {
 }
 
 .modal-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -643,7 +665,7 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .modal-icon {
@@ -678,7 +700,10 @@ img {
   margin-left: 4px;
 }
 
-.check-text span {
+.modal-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 16px;
   height: 16px;
@@ -686,7 +711,9 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   fill: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check-icon {
@@ -698,7 +725,7 @@ img {
 
 .modal-check:checked + .check-text span {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
@@ -706,6 +733,7 @@ img {
   display: block;
   margin: 0 auto;
   border: none;
+  min-width: 169px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
