@@ -676,7 +676,9 @@ img {
   display: block;
   margin-bottom: 16px;
 }
-
+.modal-privacy{
+  margin-bottom: 24px;
+}
 .modal-icon {
   fill: #2e2f42;
   position: absolute;
@@ -691,12 +693,10 @@ img {
 }
 
 .check-text {
-  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 24px;
 }
 
 .check-link {
@@ -739,7 +739,7 @@ img {
 
 .modal-btn {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   border: none;
   min-width: 169px;
   font-weight: 500;
