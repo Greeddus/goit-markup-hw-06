@@ -557,6 +557,7 @@ img {
 }
 
 .modal-form {
+  
 }
 
 .modal-close {
@@ -564,7 +565,7 @@ img {
   width: 24px;
   height: 24px;
   display: flex;
-  padding: 8px;
+  padding: 0;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -665,6 +666,8 @@ img {
 }
 
 .modal-field {
+
+  margin-bottom: 16px;
   margin-bottom: 24px;
 }
 
