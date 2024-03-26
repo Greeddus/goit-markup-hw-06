@@ -676,7 +676,8 @@ img {
   display: block;
   margin-bottom: 16px;
 }
-.modal-privacy{
+.modal-privacy {
+  display: block;
   margin-bottom: 24px;
 }
 .modal-icon {
